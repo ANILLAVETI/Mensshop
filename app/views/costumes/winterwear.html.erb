@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="costume5">Winter Wear</h1>
+<div class="w3-auto" >
+<div class="row">
+  
+
+
+    <% @costumes.each do |costume| %>
+    
+      <div class="col">
+      <div class="w3-card"><img style="width:20vw; height:60vh;" src=<%= costume.image.url %>></div>
+        <p><%= costume.name %>
+        <br><%= costume.category %>
+        <br><%= costume.desciption %>
+        <br><%= costume.price %></p>
+        
+        
+        
+  
+        
+        
+        
+      </div>
+    <% end %>
+  
+  </div>
+</div>
